@@ -129,7 +129,8 @@ class UsersDataTable extends DataTable
                         Button::make('print'),
                         Button::make('reset'),
                         Button::make('reload'),
-                    ]);
+                    ])
+                    ->layout(new Layout(['topStart' => 'buttons']));
     }
 
     public function getColumns(): array
